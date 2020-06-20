@@ -733,6 +733,8 @@ public class LoginActivity extends MXCActionBarActivity implements RegistrationM
             mIdentityServerText.setText(loginConfig.getIdentityServerUrl());
             mUseCustomHomeServersCheckbox.performClick();
         }
+
+        mHomeServerOptionLayout.setVisibility(View.GONE);
     }
 
     private void tryAutoDiscover(String possibleDomain) {
@@ -2345,7 +2347,7 @@ public class LoginActivity extends MXCActionBarActivity implements RegistrationM
         mSubmitThreePidButton.setVisibility(View.GONE);
         mSkipThreePidButton.setVisibility(View.GONE);
 
-        mHomeServerOptionLayout.setVisibility(View.VISIBLE);
+        mHomeServerOptionLayout.setVisibility(View.GONE);
 
         // Then show them depending on mode
         switch (mMode) {

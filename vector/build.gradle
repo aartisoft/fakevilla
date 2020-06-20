@@ -43,7 +43,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "im.vector"
+        applicationId "org.iig"
         minSdkVersion 16
         targetSdkVersion 28
         // use the version code
@@ -123,7 +123,7 @@ android {
 
     productFlavors {
         app {
-            applicationId "im.vector.app"
+            applicationId "org.iig.app"
             // use the version name
             versionCode rootProject.ext.versionCodeProp
             versionName rootProject.ext.versionNameProp
@@ -133,7 +133,7 @@ android {
         }
 
         appfdroid {
-            applicationId "im.vector.alpha"
+            applicationId "org.iig.alpha"
             // use the version name
             versionCode rootProject.ext.versionCodeProp
             versionName rootProject.ext.versionNameProp
